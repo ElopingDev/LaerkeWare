@@ -1,3 +1,10 @@
+C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\usermode\src\imgui\imgui.cpp;C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\build\um_intermediates\imgui.obj
+C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\usermode\src\imgui\imgui_demo.cpp;C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\build\um_intermediates\imgui_demo.obj
+C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\usermode\src\imgui\imgui_draw.cpp;C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\build\um_intermediates\imgui_draw.obj
+C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\usermode\src\imgui\imgui_impl_dx11.cpp;C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\build\um_intermediates\imgui_impl_dx11.obj
+C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\usermode\src\imgui\imgui_impl_win32.cpp;C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\build\um_intermediates\imgui_impl_win32.obj
+C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\usermode\src\imgui\imgui_tables.cpp;C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\build\um_intermediates\imgui_tables.obj
+C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\usermode\src\imgui\imgui_widgets.cpp;C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\build\um_intermediates\imgui_widgets.obj
+C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\usermode\src\Overlay.cpp;C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\build\um_intermediates\Overlay.obj
 C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\usermode\src\headers.cpp;C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\build\um_intermediates\headers.obj
 C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\usermode\src\main.cpp;C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\build\um_intermediates\main.obj
-C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\usermode\src\offsets.cpp;C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\build\um_intermediates\offsets.obj
