@@ -1,3 +1,5 @@
+#define IMGUI_DISABLE_DEBUG_TOOLS
+
 #include "Overlay.h"
 #include "imgui/imgui.h"
 #include "imgui/imgui_impl_win32.h"
@@ -6,6 +8,7 @@
 #include <d3dcompiler.h>
 #include <exception>
 #include <iostream>
+
 
 #pragma comment(lib, "d3d11.lib")
 
@@ -78,6 +81,7 @@ Overlay::Overlay(const wchar_t* windowName)
 	pBackBuffer->Release();
 
 	ImGui::CreateContext();
+
 	ImGuiIO& io = ImGui::GetIO(); (void)io;
 	io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard; // Enable Keyboard Controls
 	io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad; // Enable Gamepad Controls
@@ -137,22 +141,26 @@ void Overlay::startRender()
 
 void Overlay::render()
 {
-	if (showMenu) {
-		ImGui::Begin("LaerkeWare", &showMenu);
 
-		if (ImGui::Button("A")) {
-			std::cout << "A" << std::endl;
-		}
+	if (!showMenu) 
+		return;
+	ImGui::Begin("LaerkeWare", &showMenu);
 
-		ImGui::End();
+	if (ImGui::Button("A")) {
+		std::cout << "A" << std::endl;
 	}
+
+	
 }
 
 void Overlay::endRender()
 {
+	if (showMenu)
+		ImGui::End();
 	ImGui::Render();
 	d3dDeviceContext->OMSetRenderTargets(1, &d3dRenderTargetView, nullptr);
 	ImGui_ImplDX11_RenderDrawData(ImGui::GetDrawData());
+	d3dSwapChain->Present(1, 0);
 }
 
 void Overlay::renderLoop()
@@ -162,6 +170,8 @@ void Overlay::renderLoop()
 
 	while (msg.message != WM_QUIT) {
 		if (PeekMessage(&msg, nullptr, 0, 0, PM_REMOVE)) {
+			if (msg.message == WM_QUIT) 
+				break;
 			if (msg.message == WM_HOTKEY) {
 				if (msg.wParam == 1)  // Hotkey ID for VK_DELETE
 					toggleMenu();
@@ -169,12 +179,29 @@ void Overlay::renderLoop()
 				TranslateMessage(&msg);
 				DispatchMessage(&msg);
 			}
-				startRender();
-				render();
-				endRender();
-				d3dSwapChain->Present(1, 0);
+		startRender();
+		render();
+		endRender();
+		d3dSwapChain->Present(1, 0); // Present with vsync
 
+		}
+}
 
+void Overlay::handleMessages()
+{
+	MSG msg;
+	ZeroMemory(&msg, sizeof(msg));
 
+	while (PeekMessage(&msg, nullptr, 0, 0, PM_REMOVE)) {
+			if (msg.message == WM_QUIT)
+				break;
+			if (msg.message == WM_HOTKEY) {
+				if (msg.wParam == 1)  // Hotkey ID for VK_DELETE
+					toggleMenu();
 			}
+			TranslateMessage(&msg);
+			DispatchMessage(&msg);
+		}
+
+
 }

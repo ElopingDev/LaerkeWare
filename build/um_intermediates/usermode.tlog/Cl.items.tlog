@@ -1,3 +1,9 @@
+C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\usermode\src\cheats\OffsetHandler.cpp;C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\build\um_intermediates\OffsetHandler.obj
+C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\usermode\src\gencode.cpp;C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\build\um_intermediates\gencode.obj
+C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\usermode\src\geom\geom.cpp;C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\build\um_intermediates\geom.obj
+C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\usermode\src\memory\MemoryHandler.cpp;C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\build\um_intermediates\MemoryHandler.obj
+C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\usermode\src\cheats\ESP.cpp;C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\build\um_intermediates\ESP.obj
+C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\usermode\src\CheatManager.cpp;C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\build\um_intermediates\CheatManager.obj
 C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\usermode\src\imgui\imgui.cpp;C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\build\um_intermediates\imgui.obj
 C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\usermode\src\imgui\imgui_demo.cpp;C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\build\um_intermediates\imgui_demo.obj
 C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\usermode\src\imgui\imgui_draw.cpp;C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\build\um_intermediates\imgui_draw.obj
@@ -6,5 +12,4 @@ C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\usermode\src\imgui\imgui_impl_win3
 C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\usermode\src\imgui\imgui_tables.cpp;C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\build\um_intermediates\imgui_tables.obj
 C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\usermode\src\imgui\imgui_widgets.cpp;C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\build\um_intermediates\imgui_widgets.obj
 C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\usermode\src\Overlay.cpp;C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\build\um_intermediates\Overlay.obj
-C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\usermode\src\headers.cpp;C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\build\um_intermediates\headers.obj
 C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\usermode\src\main.cpp;C:\Users\elopi\Desktop\All\Dev\DGR\Laerdriver\build\um_intermediates\main.obj

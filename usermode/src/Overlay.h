@@ -1,6 +1,7 @@
 #pragma once
 #include <d3d11.h>
 #include <dwmapi.h>
+
 class Overlay
 {
 public:
@@ -12,6 +13,7 @@ public:
 	void render();
 	void endRender();
 	void renderLoop();
+	void handleMessages();
 
 private:
 	WNDCLASSEXW wc;

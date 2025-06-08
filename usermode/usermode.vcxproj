@@ -141,18 +141,29 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\imgui\imgui.cpp" />
+    <ClCompile Include="src\cheats\OffsetHandler.cpp" />
+    <ClCompile Include="src\gencode.cpp" />
+    <ClCompile Include="src\geom\geom.cpp" />
     <ClCompile Include="src\imgui\imgui_demo.cpp" />
+    <ClCompile Include="src\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="src\memory\MemoryHandler.cpp" />
+    <ClCompile Include="src\cheats\ESP.cpp" />
+    <ClCompile Include="src\CheatManager.cpp" />
+    <ClCompile Include="src\imgui\imgui.cpp" />
     <ClCompile Include="src\imgui\imgui_draw.cpp" />
     <ClCompile Include="src\imgui\imgui_impl_dx11.cpp" />
     <ClCompile Include="src\imgui\imgui_impl_win32.cpp" />
     <ClCompile Include="src\imgui\imgui_tables.cpp" />
-    <ClCompile Include="src\imgui\imgui_widgets.cpp" />
     <ClCompile Include="src\Overlay.cpp" />
-    <ClCompile Include="src\headers.cpp" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\cheats\OffsetHandler.h" />
+    <ClInclude Include="src\genCode.h" />
+    <ClInclude Include="src\geom\geom.h" />
+    <ClInclude Include="src\memory\MemoryHandler.h" />
+    <ClInclude Include="src\cheats\ESP.h" />
+    <ClInclude Include="src\CheatManager.h" />
     <ClInclude Include="src\imgui\imconfig.h" />
     <ClInclude Include="src\imgui\imgui.h" />
     <ClInclude Include="src\imgui\imgui_impl_dx11.h" />
@@ -162,9 +173,6 @@
     <ClInclude Include="src\imgui\imstb_textedit.h" />
     <ClInclude Include="src\imgui\imstb_truetype.h" />
     <ClInclude Include="src\Overlay.h" />
-    <ClInclude Include="src\game.hpp" />
-    <ClInclude Include="src\headers.hpp" />
-    <ClInclude Include="src\offsets.hpp" />
     <ClInclude Include="src\utils.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

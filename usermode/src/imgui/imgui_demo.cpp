@@ -1,3 +1,5 @@
+#define IMGUI_DISABLE_DEMO_WINDOWS
+
 // dear imgui, v1.91.9b
 // (demo code)
 
