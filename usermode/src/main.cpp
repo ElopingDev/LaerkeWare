@@ -48,7 +48,6 @@ int main() {
     // Create CheatManager with memHandler and pid (memHandler moved)
     CheatManager cheatManager(std::move(memHandler), pid);
 
-    // Run main loop (will include your overlay render loop)
     cheatManager.mainLoop();
 
     CloseHandle(driverHandle);

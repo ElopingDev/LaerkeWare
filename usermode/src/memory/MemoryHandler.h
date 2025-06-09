@@ -8,14 +8,11 @@
 
 class MemoryHandler {
 public:
-    // Constructor takes a driver handle (you can open the driver before creating this)
     explicit MemoryHandler(HANDLE driverHandle);
     ~MemoryHandler() = default;
 
-    // Attach to process by PID, returns success
     bool AttachToProcess(DWORD pid);
 
-    // Read from the process memory at address, templated
     template <typename T>
     T ReadMemory(std::uint32_t address) {
         T temp = {};

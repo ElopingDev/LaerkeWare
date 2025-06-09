@@ -5,7 +5,7 @@
 #include <algorithm>
 
 ESP::ESP():
-	enemyColor(new ImColor(255, 0,  0, 255))
+	enemyColor(new ImColor(205, 89,  230, 255))
 {
 
 }

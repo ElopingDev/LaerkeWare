@@ -83,8 +83,8 @@ Overlay::Overlay(const wchar_t* windowName)
 	ImGui::CreateContext();
 
 	ImGuiIO& io = ImGui::GetIO(); (void)io;
-	io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard; // Enable Keyboard Controls
-	io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad; // Enable Gamepad Controls
+	io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;
+	io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad; 
 
 	ImGui::StyleColorsDark();
 	ImGui_ImplWin32_Init(windowHandle);
@@ -182,7 +182,7 @@ void Overlay::renderLoop()
 		startRender();
 		render();
 		endRender();
-		d3dSwapChain->Present(1, 0); // Present with vsync
+		d3dSwapChain->Present(1, 0); 
 
 		}
 }

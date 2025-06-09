@@ -20,7 +20,7 @@ void CheatManager::mainLoop()
     while (true) {
         rereadPointers();
         render();
-        Sleep(1000 / 120);  // Correct timing (Sleep takes milliseconds)
+        Sleep(1 / 120); 
     }
 }
 
